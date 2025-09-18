@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8fbfc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-half, .bottom-half {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.top-half {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  background: #258696;
+  border-bottom: 2px solid #ccc;
+}
+
+.bottom-half {
+  background: #d1e3eb;
+}
+
+.university {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h3, h4 {
+  margin: 10px 0;
+}
+
+h1 a {
+  color: #b05263;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #223d57;
+}
+
+h4 a {
+  font-size: 0.9rem;
+  color: #0a4c6a;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+  color: #213e57;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #71b8c4;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #b05263;
+}
+
+.bottom-half ul {
+  padding: 0;
+}
+
+.saved-item {
+  cursor: pointer;
+  margin-bottom: 6px;
+  color: #223d57;
+}
+
+.saved-item:hover {
+  text-decoration: underline;
+}
